@@ -1,3 +1,8 @@
+body {
+  background-color: tan;
+  font-family: Arial, sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -74,9 +79,40 @@ button {
   background-color:black;
   border: none;
   border-radius: 15px;
+  border-color: black;
   cursor: pointer; 
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #fff;
+  color: black;
+  border-color: black;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+li {
+  display: grid;
+  gap: 1.75em;
+  align-items: start;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  color: black;
+}
+
+ul.attrButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+ul.attrButtons li {
+  flex: 1;
 }
